@@ -1,13 +1,18 @@
-import latihan1
+from helpers import input_ya_tidak
 
 
 def start():
+    """Menampilkan halaman warung sampai pengguna kembali ke menu."""
     while True:
-        print("ini warung apps!")
-        play_again = input("kembali ke menu utama? [y/n] \n")
+        print("\nIni warung apps!")
+        kembali_ke_menu = input_ya_tidak("Kembali ke menu utama? (y/n): ")
 
-        if play_again == "y":
-            return latihan1.menu()
+        if kembali_ke_menu == "y":
+            # Return menghentikan warung dan membawa program kembali ke menu.
+            return
 
-if  __name__ == "__main__":
+        print("Kamu masih berada di warung.")
+
+
+if __name__ == "__main__":
     start()
