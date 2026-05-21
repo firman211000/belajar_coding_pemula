@@ -1,11 +1,20 @@
 import random
 
-from helpers import input_ya_tidak
-
 
 JUMLAH_KOTAK = 4
 IKON_BEBEK = "🐤"
 IKON_PYTHON = "🐍"
+
+
+def input_main_lagi():
+    """Meminta jawaban y atau n setelah satu ronde selesai."""
+    while True:
+        jawaban = input("\nApakah kamu ingin bermain lagi? (y/n): ").strip().lower()
+
+        if jawaban == "y" or jawaban == "n":
+            return jawaban
+
+        print("Input tidak valid. Harap masukkan 'y' atau 'n'.")
 
 
 def start():
@@ -51,7 +60,7 @@ def start():
 
         print(tampilan_jawaban)
 
-        main_lagi = input_ya_tidak("\nApakah kamu ingin bermain lagi? (y/n): ")
+        main_lagi = input_main_lagi()
 
         if main_lagi == "n":
             # Return menghentikan game dan membawa program kembali ke menu.

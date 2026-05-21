@@ -10,17 +10,6 @@ def tampilkan_judul(judul):
     print(garis)
 
 
-def input_ya_tidak(pesan):
-    """Meminta jawaban y atau n sampai pengguna mengisi dengan benar."""
-    while True:
-        jawaban = input(pesan).strip().lower()
-
-        if jawaban == "y" or jawaban == "n":
-            return jawaban
-
-        print("Input tidak valid. Harap masukkan 'y' atau 'n'.")
-
-
 def keluar_program():
     """Menampilkan hitung mundur sederhana sebelum program selesai."""
     print("Program akan keluar dalam 3 detik...")
