@@ -1,3 +1,5 @@
+from socket import gethostname
+
 from games import tebak_python
 from helpers import keluar_program, tampilkan_judul
 from tools import warung
@@ -31,7 +33,7 @@ def menu():
 
 def main():
     """Menjalankan program dari awal sampai selesai."""
-    tampilkan_judul("Program Belajar Python")
+    tampilkan_judul(gethostname())
     menu()
     keluar_program()
 
