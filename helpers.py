@@ -1,12 +1,14 @@
+import socket 
 from time import sleep
 
+hostname = socket.gethostname()
 
-def tampilkan_judul(judul):
-    """Menampilkan judul program dengan hiasan garis bintang."""
-    garis = "*" * (len(judul) + 6)
+def tampilkan_judul():
+    #Menampilkan judul program dengan hiasan garis bintang.
+    garis = "*" * (len(hostname) + 6)
 
     print(garis)
-    print(f"** {judul} **")
+    print(f"** {hostname} **")
     print(garis)
 
 
@@ -27,5 +29,5 @@ def keluar_program():
 
 
 if __name__ == "__main__":
-    tampilkan_judul("Program Belajar Python")
+    tampilkan_judul()
     keluar_program()

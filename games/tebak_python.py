@@ -2,12 +2,12 @@ import random
 
 
 JUMLAH_KOTAK = 4
-IKON_BEBEK = "🐤"
-IKON_PYTHON = "🐍"
+GAMBAR_BEBEK = "🐤"
+GAMBAR_PYTHON = "🐍"
 
 
 def input_main_lagi():
-    """Meminta jawaban y atau n setelah satu ronde selesai."""
+    #Meminta jawaban y atau n setelah satu ronde selesai
     while True:
         jawaban = input("\nApakah kamu ingin bermain lagi? (y/n): ").strip().lower()
 
@@ -18,17 +18,17 @@ def input_main_lagi():
 
 
 def start():
-    """Menjalankan game tebak python sampai pemain memilih berhenti."""
+    #Menjalankan game tebak python sampai pemain memilih berhenti
     while True:
         # Posisi python diacak ulang setiap ronde.
         posisi_python = random.randint(1, JUMLAH_KOTAK)
 
         # Kotak tertutup hanya menampilkan bebek kepada pemain.
-        kotak_tertutup = [IKON_BEBEK] * JUMLAH_KOTAK
+        kotak_tertutup = [GAMBAR_BEBEK] * JUMLAH_KOTAK
 
         # Kotak jawaban memperlihatkan posisi python yang sebenarnya.
         kotak_jawaban = kotak_tertutup.copy()
-        kotak_jawaban[posisi_python - 1] = IKON_PYTHON
+        kotak_jawaban[posisi_python - 1] = GAMBAR_PYTHON
 
         tampilan_kotak = " ".join(kotak_tertutup)
         tampilan_jawaban = " ".join(kotak_jawaban)
