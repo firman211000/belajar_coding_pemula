@@ -12,12 +12,12 @@ def menu():
         print("2. Buka warung pintar")
         print("3. Keluar")
 
-        pilihan = input("Masukkan pilihan Anda: ")  #Pilihan pengguna tidak boleh string
+        pilihan = input("Masukkan pilihan Anda: ")  
         if not pilihan.isdigit():       
             print("Pilihan tidak valid. Silakan masukkan angka.")
             continue
 
-        pilihan_menu = int(pilihan) #Konversi string ke integer untuk validasi pilihan menu
+        pilihan_menu = int(pilihan) 
         if pilihan_menu < 1 or pilihan_menu > 3:
             print("Pilihan tidak tersedia. Silakan pilih 1, 2, atau 3.")
             continue
