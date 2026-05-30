@@ -1,5 +1,5 @@
 def start():
-    """Menampilkan halaman warung sampai pengguna kembali ke menu."""
+    #Menampilkan halaman warung sampai pengguna kembali ke menu.
     while True:
         print("\nIni warung apps!")
 
