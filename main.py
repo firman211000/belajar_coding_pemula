@@ -8,11 +8,11 @@ def menu():
     while True:
         print("\nSelamat datang di program belajar Python!")
         print("Pilih menu:")
-        print("1. Mulai permainan tebak python")
+        print("\n1. Mulai permainan tebak python")
         print("2. Buka warung pintar")
         print("3. Keluar")
 
-        pilihan = input("Masukkan pilihan Anda: ")  
+        pilihan = input("\nMasukkan pilihan Anda: ")  
         if not pilihan.isdigit():       
             print("Pilihan tidak valid. Silakan masukkan angka.")
             continue
@@ -26,8 +26,11 @@ def menu():
             tebak_python.start()
         elif pilihan_menu == 2:
             warung.start()
+        elif pilihan_menu == 3:
+            keluar_program()
         else:
-            break
+            print("Pilihan tidak valid. Silakan coba lagi.")
+            
 def main():
     #Menjalankan program dari awal sampai selesai
     tampilkan_judul()

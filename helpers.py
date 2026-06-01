@@ -13,7 +13,7 @@ def tampilkan_judul():
 
 
 def keluar_program():
-    """Menampilkan hitung mundur sederhana sebelum program selesai."""
+    #Menampilkan hitung mundur sederhana sebelum program selesai.
     print("Program akan keluar dalam 3 detik...")
 
     sleep(1)
@@ -24,9 +24,10 @@ def keluar_program():
 
     sleep(1)
     print("1....")
-
+    
+    sleep(1)
     print("Program keluar. Terima kasih sudah bermain!")
-
+    exit()
 
 if __name__ == "__main__":
     tampilkan_judul()
