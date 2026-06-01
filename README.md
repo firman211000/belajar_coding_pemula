@@ -5,8 +5,11 @@ Project latihan Python sederhana dengan menu utama, game tebak python, dan halam
 ## Menjalankan Program
 
 ```bash
+python3 -m pip install -r requirements.txt
 python3 main.py
 ```
+
+Program ini membutuhkan MySQL lokal dengan database `warung_mini`.
 
 ## Struktur File
 
